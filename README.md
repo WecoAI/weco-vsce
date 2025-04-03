@@ -18,8 +18,12 @@ This extension is based on our research paper [AIDE: AI-Driven Exploration in th
 1. Open a folder or workspace in VS Code containing the code you want to optimize.  
 2. Install the Weco extension and open its sidebar from the Activity Bar.  
 3. Enter your OpenAI API key when prompted by the in-extension modal or through the Settings Modal (gear icon).  
-4. Fill out the optimization fields:  
-   - *(Optional)* **Analyze & Suggest**: Provide a simple "Task/Goal" for the built-in Auto-Config to propose default settings.  
+4. Configure your optimization using one of these approaches:
+   - **Auto-Configure**: Provide a simple "Task/Goal" in the **Analyze & Suggest** field and let Weco propose default settings.
+   - **Manual Configure**: Directly fill in all required fields yourself.
+   - **Hybrid Approach**: Start with Auto-Config, then review and adjust the suggested settings before running.
+   
+   Required fields include:
    - **File to Optimize**  
    - **Evaluation Command** (e.g., `python evaluate.py`)  
    - **Metric Name** (e.g., "Accuracy" or "Time")  
