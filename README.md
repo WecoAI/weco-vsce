@@ -1,8 +1,10 @@
-# Weco VSCE - Optimize Your Code Effortlessly  
+# Weco AI Code Optimizer for VS Code
 
-![Weco VSCE](weco-vsce.jpg)
+![Weco AI Code Optimizer](weco-vsce.jpg)
 
-A powerful Visual Studio Code extension for interacting with Weco AI's code optimizer. Whether you're looking to improve performance or refine code quality, Weco streamlines your workflow for a better development experience.
+A powerful Visual Studio Code extension for AI-powered code optimization. Whether you're looking to improve performance or refine code quality, Weco streamlines your workflow for a better development experience.
+
+> **IMPORTANT DISCLAIMER**: This extension transmits code to the Weco AI and AI language model services for analysis and optimization. Please do not use it with sensitive, proprietary, or confidential code unless you accept the associated privacy implications. See the [Privacy & Data Usage](#privacy--data-usage) section for details.
 
 ## Overview
 Weco leverages advanced optimization techniques and AI language model strategies to iteratively improve your source code. It supports multiple model configurations, provides a live progress chart, and allows flexible setups to suit different optimization tasks.
@@ -12,12 +14,12 @@ This extension is based on our research paper [AIDE: AI-Driven Exploration in th
 ## Installation & Requirements
 - Visual Studio Code or a VSC fork like Cursor
 - Python (if your evaluation script is in Python) 
-- OpenAI API Key - the extension will prompt you to set one when first installed
+- API Key - the extension will prompt you to configure your API key when first installed
 
 ## Quick Start
 1. Open a folder or workspace in VS Code containing the code you want to optimize.  
 2. Install the Weco extension and open its sidebar from the Activity Bar.  
-3. Enter your OpenAI API key when prompted by the in-extension modal or through the Settings Modal (gear icon).  
+3. Enter your API key when prompted by the in-extension modal or through the Settings Modal (gear icon).  
 4. Configure your optimization using one of these approaches:
    - **Auto-Configure**: Provide a simple "Task/Goal" in the **Analyze & Suggest** field and let Weco propose default settings.
    - **Manual Configure**: Directly fill in all required fields yourself.
@@ -42,6 +44,16 @@ This extension is based on our research paper [AIDE: AI-Driven Exploration in th
 - **Eval Script Issues**: If your command fails or no numeric metric is found, double-check your script output.  
 - **No Improvement**: Provide more steps or refine your metric logic. The extension is only as good as the evaluation feedback.
 
+## Privacy & Data Usage
+
+This extension sends portions of your source code and evaluation logs to external API services including [Weco AI](https://www.weco.ai/) for the purpose of AI-based code optimization. **Do not use this extension for proprietary or sensitive code** unless you understand and accept the privacy implications.
+
+- **Data Collected**: Source code contents and logs from your evaluation script.
+- **Purpose**: Perform code optimization suggestions and analysis.
+- **External Services**: The extension calls external API endpoints.
+- **Storage**: We do not permanently store user code, but logs/metrics may be kept for short periods to improve suggestions.
+- **Legal**: By using this extension, you acknowledge that your code will be transmitted to these external services.
+
 ## Feedback & Support
 If you encounter bugs or have feature requests, please open an issue in this repository.
 
@@ -50,4 +62,4 @@ If you encounter bugs or have feature requests, please open an issue in this rep
 
 ---
 
-Enjoy effortless code optimization with Weco VSCE!
+Enjoy effortless code optimization with Weco AI Code Optimizer!
